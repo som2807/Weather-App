@@ -1,0 +1,90 @@
+.container {
+  margin-top: 2rem;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.detailCard {
+  padding: 1rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.detailCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.detailLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.detailValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.visibilityCard {
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+.visibilityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.visibilityValue {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+}
+
+.feelsLike {
+  background: linear-gradient(135deg, #fed7aa, #fdba74);
+}
+
+.humidity {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+}
+
+.windSpeed {
+  background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+}
+
+.pressure {
+  background: linear-gradient(135deg, #e9d5ff, #d8b4fe);
+}
+
+@media (max-width: 480px) {
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detailValue {
+    font-size: 1.125rem;
+  }
+}
