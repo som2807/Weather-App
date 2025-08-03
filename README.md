@@ -3,6 +3,7 @@ The primary goal is to provide users with instant, accurate, and easy-to-underst
 
 
 Needed Things-
+
 1.It's a React Application so must install Node.js in the system.
 
 2.Must Install lucide-react dependency in the npm.(npm install lucide-react)
